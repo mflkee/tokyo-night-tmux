@@ -38,7 +38,7 @@ fi
 UNTRACKED_COUNT="$(git ls-files --other --directory --exclude-standard | wc -l | bc)"
 
 if [[ $CHANGED_COUNT -gt 0 ]]; then
-  STATUS_CHANGED="${RESET}#[fg=${THEME[yellow]},bg=${THEME[background]},bold] ${CHANGED_COUNT} "
+  STATUS_CHANGED="${RESET}#[fg=#000000,bg=${THEME[background]},bold] ${CHANGED_COUNT} "
 fi
 
 if [[ $INSERTIONS_COUNT -gt 0 ]]; then
